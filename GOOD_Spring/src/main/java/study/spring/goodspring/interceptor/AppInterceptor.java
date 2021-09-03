@@ -76,17 +76,14 @@ public class AppInterceptor implements HandlerInterceptor {
 				if (url.contains("keyword")) {
 					String keyword_str = ""; // 검색어 값을 담을 변수
 					String keyword_url = ""; // 검색이 발생한 페이지의 경로
-					// keyword뒤에 추가로 붙는 파라미터가 없으면 'keyword='뒤에 붙는 값을 모두 keyword변수에 담는다.
-					if (!queryString.contains("&")) {
+						// 'keyword='뒤에 붙는 값을 모두 keyword변수에 담는다.				
 						keyword_str = queryString.substring(queryString.indexOf("keyword") + 8);
-						
-					}else {
-						
-						// keyword뒤에 추가로 파라미터가 있으면
-						// 'keyword='의 바로 뒤 부터 첫번째 '&'까지의 값을 keyword 변수에 담는다.
-						String queryStirng_tmp = queryString.substring(queryString.indexOf("keyword") + 8);
-						keyword_str = queryStirng_tmp.substring(0, queryStirng_tmp.indexOf("&"));
-					}
+						// 만약 keyword뒤에 추가로 파라미터가 있으면 (contains("&"))
+						// 'keyword='의 바로 뒤 부터 첫번째 '&'까지의 값을 keyword_str 변수에 담는다.
+						if(keyword_str.contains("&")) {
+							keyword_str = keyword_str.substring(0, keyword_str.indexOf("&"));							
+						}
+					
 					//.do로 끝나는 페이지와 그렇지 않은 페이지의 경로를 구분하여 kewword_Url에 담는다.
 					if (url_tmp.lastIndexOf(".do") != -1) {
 
