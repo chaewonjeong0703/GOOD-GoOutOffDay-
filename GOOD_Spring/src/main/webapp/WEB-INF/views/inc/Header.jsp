@@ -132,7 +132,7 @@
 						<div class="collapse navbar-collapse clearfix " id="navi_search"
 							style="padding-left: 29px;">
 							<!-- 반응형 햄버거 아코디언 -->
-							<div class="panel-group visible-xs" id="accodian"
+							<div class="panel-group" id="accodian"
 								style="border-bottom: 0; margin-bottom: 0 !important; margin-top: 10px; font-size: 20px">
 								<div class="panel panel-default">
 									<div class="panel-heading" style="background: #fff;">
@@ -252,7 +252,7 @@
 								</div>
 							</div>
 							<!-- //반응형 햄버거 아코디언 -->
-							<ul class="nav navbar-nav navbar-left hidden-xs" id="cbp-tm-menu">
+							<ul class="nav navbar-nav navbar-left" id="cbp-tm-menu">
 								<!--자전거메뉴-->
 								<li><a
 									href="${pageContext.request.contextPath}/bicyclePage/bicycle_index.do"><img
@@ -315,7 +315,7 @@
 								action="${pageContext.request.contextPath }/mainPage/search.do"
 								class="navbar-form navbar-right" role="search"
 								style="border-bottom: 0 !important; border-left: 1px solid #ccc;">
-								<div class="form-group input-group">
+								<div class="form-group input-group" style="margin-bottom: 0 !important;">
 									<input type="search" name="keyword" class="form-control"
 										placeholder="검색"> <span class="input-group-btn">
 										<button class="btn btn-blue" style="padding: 3.3px 10px; background-color: #cddfff;">

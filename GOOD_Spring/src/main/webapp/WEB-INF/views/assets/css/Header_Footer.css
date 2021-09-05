@@ -112,7 +112,7 @@ footer .container {
 	text-align: center;
 }
 
-@media ( max-width : 767px) {
+@media ( max-width : 767.98px) {
 	div#header #h_logo img {
 		position: absolute;
 		margin-top: 25px !important;
@@ -123,8 +123,11 @@ footer .container {
 		left: 51%;
 		transform: translate(-50%, -50%);
 	}
+	div#header #cbp-tm-menu{
+		display: none !important;
+	}
 	div#header #h_logo {
-		padding: 0 important!;
+		padding: 0 !important;
 	}
 	div#header #login_join_box {
 		padding-top: 0 !important;
@@ -191,7 +194,7 @@ footer .container {
 	}
 }
 
-@media ( min-width :767px) {
+@media ( min-width :768px) {
 	div#header #h_logo img {
 		margin-left: 25px;
 		width: 250px !important;
@@ -202,6 +205,9 @@ footer .container {
 		padding: 15px 10px;
 		padding-left: 0;
 		padding-bottom: 0;
+	}
+	div#header #accodian {
+		display: none !important;
 	}
 	div#header #login_join {
 		margin-top: 13px;
@@ -249,7 +255,7 @@ footer .container {
 	padding: 15px;
 }
 
-@media ( max-width :991px) {
+@media ( max-width :991.98px) {
 	div#p_box address {
 		margin: 0 !important;
 	}
@@ -276,7 +282,7 @@ footer .container {
 	z-index: 1000000;
 }
 
-@media ( min-width : 767px) and ( max-width :991px) {
+@media ( min-width : 768px) and ( max-width :991.98px) {
 	.account_modal {
 		transform: translateX(-50%);
 		background-color: #ccc;
@@ -287,7 +293,7 @@ footer .container {
 	}
 }
 
-@media ( max-width :767px) {
+@media ( max-width :767.98px) {
 	.account_modal {
 		left: 50%;
 		transform: translateX(-103%);
